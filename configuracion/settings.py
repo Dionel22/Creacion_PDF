@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-dr@iv8)@(r+%l&%3l#!i6n=el$n$)1ecv-^q&ppu)#+=fkzext
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dionel23.pythonanywhere.com']
+ALLOWED_HOSTS = ['dionel23.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -117,4 +117,5 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+import os
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
